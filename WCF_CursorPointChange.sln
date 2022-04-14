@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCF_CursorPointChange", "WCF_CursorPointChange\WCF_CursorPointChange.csproj", "{55146A81-08A4-4B41-8F12-AF8C3F4B0F4F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Host\Host.csproj", "{10C7BB7B-13AC-4C9B-83CD-EECCD97F5154}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{55146A81-08A4-4B41-8F12-AF8C3F4B0F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55146A81-08A4-4B41-8F12-AF8C3F4B0F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55146A81-08A4-4B41-8F12-AF8C3F4B0F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C7BB7B-13AC-4C9B-83CD-EECCD97F5154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C7BB7B-13AC-4C9B-83CD-EECCD97F5154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C7BB7B-13AC-4C9B-83CD-EECCD97F5154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C7BB7B-13AC-4C9B-83CD-EECCD97F5154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

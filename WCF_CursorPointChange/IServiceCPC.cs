@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
@@ -7,7 +8,6 @@ using System.Text;
 
 namespace WCF_CursorPointChange
 {
-    // ПРИМЕЧАНИЕ. Можно использовать команду "Переименовать" в меню "Рефакторинг", чтобы изменить имя интерфейса "IServiceCPC" в коде и файле конфигурации.
     [ServiceContract(CallbackContract =typeof(IServerCPCCallBack))]
     public interface IServiceCPC
     {
@@ -18,12 +18,18 @@ namespace WCF_CursorPointChange
         void Disconnect(int id);
 
         [OperationContract(IsOneWay = true)]
-        void SendMessage(string message);
+        void SendMessage(string message, int id);
+
+        [OperationContract]
+        DataTable GetData();
+
+        [OperationContract]
+        string InsertData(string description);
     }
 
     public interface IServerCPCCallBack
     {
-        [OperationContract]
+        [OperationContract(IsOneWay =true)]
         void MessageCallBack(string message);
     }
 }
